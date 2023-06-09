@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Enviar Certificados</title>
+</head>
+
+<body>
+    <header id="Logo UVV">
+        <img src="https://cdn.discordapp.com/attachments/779807771348566019/1115749707038339082/Logo_UVV.png"
+            alt="LogoUVV" id="LogoUVV">
+    </header>
+    <main id="Mainline">
+        <nav id="BarraLateral">
+            <section id="NavegarPáginas">
+                <img src="https://cdn.discordapp.com/attachments/1075756160793198706/1115800694788722698/image.png"
+                    alt="home-uvv" id="home-uvv">
+                <img src="https://media.discordapp.net/attachments/1075756160793198706/1115801220058185840/image.png"
+                    alt="enviar-uvv" id="enviar-uvv">
+                <img src="https://media.discordapp.net/attachments/1075756160793198706/1115801267671932969/image.png"
+                    alt="historico-uvv" id="historico-uvv">
+
+            </section>
+        </nav>
+        <section id="Conteudo">
+            <section id="BlocosInfo">
+                <div class="Bloco"> </div>
+                <div class="Bloco"> </div>
+                <div class="Bloco"> </div>
+                <div class="Bloco"> </div>
+            </section>
+        </section>
+        <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 500px; height: 700px;">
+            <div class=" mb-3">
+                <label for="exampleInputEmail1" class="form-label">Titulo da atividade</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Ex: Palestra X">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Descrição da atividade</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Data da Atividade</label>
+                <input type="date" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-md-6 mt-3">
+                <label for="inputCity" class="form-label">Quatidade de horas</label>
+                <input type="number" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4 mt-3">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2 mt-3">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="mb-3 form-check mt-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+            </script>
+
+</body>
+
+</html>
