@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {}
+
 
 main {
     display: flex;
@@ -14,7 +14,7 @@ main {
 
 section#informacoes {
     display: flex;
-    width: 90%;
+    width: 85%;
     background-color: #f2f2f2;
     min-height: 100vh;
     flex-direction: column;
@@ -37,7 +37,7 @@ section#informacoes div.infclass {
     width: 225px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 #ultimosenv {
@@ -63,7 +63,7 @@ table {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
     text-align: center;
 }
@@ -78,9 +78,13 @@ td {
 
 #menu_lateral {
     background-color: #1F1273;
-    width: 10%;
+    width: 15%;
     display: flex;
     flex-direction: column;
+}
+
+#menu_lateral li a {
+    font-size: 15px;
 }
 
 #menus {
