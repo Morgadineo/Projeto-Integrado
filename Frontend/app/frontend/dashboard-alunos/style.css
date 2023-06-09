@@ -11,7 +11,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu';
 }
 
 header#cabecalho {
@@ -33,7 +32,7 @@ header#cabecalho img {
 nav#menu_lateral {
     display: flex;
     flex-direction: column;
-    width: 30vh;
+    width: 35vh;
     height: 80vh;
     background-color: #1F1273;
     color: white;
@@ -43,13 +42,26 @@ nav#menu_lateral {
 nav#menu_lateral div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin: 1vh;
+    padding: 1rem;
+}
+
+nav#menu_lateral div h3 {
+    margin-left: 0.2rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 nav#menu_lateral ul {
     background-color: #1B0C54;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5vh;
 }
 
 nav#menu_lateral ul li {
@@ -57,10 +69,23 @@ nav#menu_lateral ul li {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    font-size: 1rem;
+}
+
+nav#menu_lateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+}
+
+nav#menu_lateral ul li a:hover {
+    color: #6b5ad8;
+    text-decoration: none;
+    font-family: 'Ubuntu';
 }
 
 nav#menu_lateral ul li img {
-    width: 10vh;
-    height: 10vh;
+    width: 6vh;
+    height: 6vh;
     object-fit: cover;
 }
