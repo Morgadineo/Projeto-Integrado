@@ -2,40 +2,80 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard/Coordenador</title>
-    <link rel="stylesheet" href="/app/frontend/visualizar-certificados/dashboard-coordenador.css">
+    <link rel="stylesheet" href="Frontend/dashboard-coordenador/index.css">
 </head>
 
 <body>
+
     <header id="Logo UVV">
         <img src="/app/img/Logo_UVV.png" alt="LogoUVV" id="LogoUVV">
     </header>
-    <nav id="menu_lateral">
-        <img src="" alt="icone_aluno">
-        <h3 id="nome_aluno">Nome do aluno</h3>
 
-        <ul id="menus">
-            <li>Dashboard</li>
-            <li>Validar Certificados</li>
-            <li>Histórico</li>
-        </ul>
-    </nav>
-    <div>
+    <main>
 
-    </div>
-    <h1>Pendentes</h1>
-    <h1>5</h1>
-    <div>
+        <nav id="menu_lateral">
+            <img src="" alt="icone_aluno">
+            <h3 id="nome_aluno">Nome do aluno</h3>
 
-    </div>
-    <div>
+            <ul id="menus">
+                <li> <img src="img/icone_casa.png" alt="icone_casa" class="min_icon">
+                    <a href="#">Dashboard </a>
+                </li>
+                <li> <img src="img/icone_enviar.png" alt="icone_enviar" class="min_icon">
+                    <a href="#">Vizualizar Certificados</a>
+                </li>
+                <li> <img src="img/icone_pasta.png" alt="icone_pasta" class="min_icon">
+                    <a href="#">Histórico de Envios </a>
+                </li>
+            </ul>
 
-    </div>
+        </nav>
 
+        <section id="informacoes">
+            <div id="inf1">
+                <div class="infclass">
+                    <h1>Gráficos</h1>
+                </div>
 
+                <div class="infclass">
+                    <h1>Pendentes</h1>
+                    <h1>5</h1>
+                </div>
+
+                <div class="infclass">
+                    <h1>Total de Certificados</h1>
+                    <h1>120</h1>
+                </div>
+            </div>
+            <h1 id="ultimosenv">Últimos certificados enviados pelos alunos</h1>
+            <table>
+                <thead>
+
+                    <th>Nome da Atividade</th>
+                    <th>Tipo de Atividade</th>
+                    <th>Status</th>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML e CSS básico</td>
+                        <td>Extensão</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>Python Básico</td>
+                        <td>Extensão</td>
+                        <td>Pendente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
 
 </body>
