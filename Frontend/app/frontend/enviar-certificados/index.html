@@ -17,17 +17,26 @@
             alt="LogoUVV" id="LogoUVV">
     </header>
     <main id="Mainline">
-        <nav id="BarraLateral">
-            <section id="NavegarPáginas">
-                <img src="https://cdn.discordapp.com/attachments/1075756160793198706/1115800694788722698/image.png"
-                    alt="home-uvv" id="home-uvv">
-                <img src="https://media.discordapp.net/attachments/1075756160793198706/1115801220058185840/image.png"
-                    alt="enviar-uvv" id="enviar-uvv">
-                <img src="https://media.discordapp.net/attachments/1075756160793198706/1115801267671932969/image.png"
-                    alt="historico-uvv" id="historico-uvv">
-
+        <nav id="barra-lateral">
+            <section id="navegar-paginas">
+              <div class="menu-sites">
+                <a href="/Frontend/frontend/dashboard-alunos/index.html">
+                  <img src="/Frontend/img/icone_casa.png" alt="home-uvv" id="home-uvv">
+                  Dashboard
+                </a>
+                
+                <a href="/Frontend/frontend/enviar-certificados/index.html">
+                  <img src="/Frontend/img/icone_enviar.png" alt="enviar-uvv" id="enviar-uvv">
+                  Enviar Certificado
+                </a>
+          
+                <a href="/Frontend/frontend/visualizar-certificados/index-visualizar.html">
+                  <img src="/Frontend/img/icone_pasta.png" alt="historico-uvv" id="historico-uvv">
+                  Histórico de envios
+                </a>
+              </div>
             </section>
-        </nav>
+          </nav>
         <section id="Conteudo">
             <section id="BlocosInfo">
                 <div class="Bloco"> </div>
@@ -36,7 +45,7 @@
                 <div class="Bloco"> </div>
             </section>
         </section>
-        <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 500px; height: 700px;">
+        <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded w-50 p-3 " style="width: 500px; height: 700px;">
             <div class=" mb-3">
                 <label for="exampleInputEmail1" class="form-label">Titulo da atividade</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -56,26 +65,25 @@
                 <input type="number" class="form-control" id="inputCity">
             </div>
             <div class="col-md-4 mt-3">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Tipo da atividade</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
             </div>
-            <div class="col-md-2 mt-3">
-                <label for="inputZip" class="form-label">Zip</label>
+            <div class="col-md-2 mt-3 mb-3">
+                <label for="inputZip" class="form-label">Código de Validação</label>
                 <input type="text" class="form-control" id="inputZip">
             </div>
-            <div class="mb-3 form-check mt-3">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mb-3 w-50">
+                <label for="formFile" class="form-label">Anexar Certificado</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+            <button type="submit" class="btn btn-primary border border-0" style="background-color: #1F1273;">Enviar</button>
         </form>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-            </script>
+        </script>
 
 </body>
 
