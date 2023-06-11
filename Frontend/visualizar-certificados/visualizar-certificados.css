@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
     margin: 0;
@@ -21,7 +22,7 @@ body {
     padding-top: 27px;
     padding-bottom: 67px;
     width: 233px;
-    height: 920px;
+    height: 838px;
     background-color: #1F1273;
 }
 
@@ -39,9 +40,10 @@ body {
     border-radius: 20px;
     margin-left: 14px;
     margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     height: 136px;
-    align-items: center;
-    display: flex;
+    width: 199px;
     background-color: #1B0C54;
 }
 
@@ -59,12 +61,35 @@ body {
     font-family: 'Ubuntu';
 }
 
-#LegendasSuporte {
+#Palavras_Info {
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Ubuntu';
+}
+
+#Palavras_Terms {
+    margin-left: 51px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Ubuntu';
+}
+
+#Palavras_Copyright {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Ubuntu';
+    color: #717171;
+}
+
+.LegendasSuporte {
     display: flex;
     flex-direction: row;
     font-family: 'Ubuntu';
     align-items: center;
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 .Bloco {
@@ -90,6 +115,31 @@ body {
     margin-right: 13px;
 }
 
+.IconeNavegarIcones {
+    padding-top: 12px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.IconeNavegarPalavras {
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
 .IconesClasse {
     margin: 1px;
+}
+
+.IconeAluno {
+    padding-top: 583px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 25px;
 }

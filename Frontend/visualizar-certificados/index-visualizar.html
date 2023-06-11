@@ -6,23 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vizualização de Certificados</title>
-    <link rel="stylesheet" href="/app/frontend/visualizar-certificados/visualizar-certificados.css">
+    <link rel="stylesheet" href="/Frontend/visualizar-certificados/visualizar-certificados.css">
 </head>
 
 <body>
     <header id="Logo UVV">
-        <img src="/app/img/Logo_UVV.png" alt="LogoUVV" id="LogoUVV">
+        <img src="/Frontend/img/logo_uvv.png" alt="LogoUVV" id="LogoUVV">
     </header>
     <main id="Mainline">
         <nav id="BarraLateral">
             <section id="Aluno">
-                <img class="ImgFotoAluno" src="/app/img/icon _user.png" alt="Foto_Aluno">
+                <img class="ImgFotoAluno" src="/Frontend/img/icone_aluno.png" alt="Foto_Aluno">
                 <p>Nome_do_Aluno</p>
             </section>
             <section id="NavegarPáginas">
-                <li>Dashboard</li>
-                <li>Enviar Certificados</li>
-                <li>Histórico</li>
+                <div class="IconeNavegarIcones">
+                    <img src="/Frontend/img/icone_casa.png" alt="icone_casa">
+                    <p class="IconeNavegarPalavras">Dashboard</p>
+                </div>
+                <div class="IconeNavegarIcones">
+                    <img src="/Frontend/img/icone_enviar.png" alt="icone_enviar">
+                    <p class="IconeNavegarPalavras">Enviar Certificados</p>
+                </div>
+                <div class="IconeNavegarIcones">
+                    <img src="/Frontend/img/icone_pasta.png" alt="icone_pasta">
+                    <p class="IconeNavegarPalavras">Histórico de Envios</p>
+                </div>
+            </section>
+            <section>
+                <img class="IconeAluno" src="/Frontend/img/simbolo_de_aluno.png" alt="Simbolo de Aluno">
             </section>
         </nav>
         <section id="Conteudo">
@@ -35,14 +47,20 @@
             <div class="BlocoGeral"></div>
             <section id="Creditos">
                 <div class="IconesClasse">
-                    <img src="/app/img/icon_discord.png" alt="discord" class="Icones">
-                    <img src="/app/img/icon_email.png" alt="email" class="Icones">
-                    <img src="/app/img/icon_menssage.png" alt="mensagem" class="Icones">
+                    <img src="/Frontend/img/icone_discord.png" alt="discord" class="Icones">
+                    <img src="/Frontend/img/icone_email.png" alt="email" class="Icones">
+                    <img src="/Frontend/img/icone_mensagem.png" alt="mensagem" class="Icones">
                 </div>
-                <div id="LegendasSuporte">
-                    <p> Info </p>
-                    <p> Support </p>
-                    <p> Privacy </p>
+                <div class="LegendasSuporte">
+                    <p id="Palavras_Info"> Info </p>
+                    <p id="Palavras_Info"> Support </p>
+                    <p id="Palavras_Info"> Privacy </p>
+                </div>
+                <div class="LegendasSuporte">
+                    <p id="Palavras_Terms"> Terms of Use </p>
+                </div>
+                <div class="LegendasSuporte">
+                    <p id="Palavras_Copyright"> 2023 Redstone Corporation </p>
                 </div>
             </section>
         </section>
