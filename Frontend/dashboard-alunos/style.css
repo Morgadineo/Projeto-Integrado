@@ -24,16 +24,17 @@ header#cabecalho {
 }
 
 header#cabecalho img {
-    width: 50vh;
-    height: 30vh;
+    width: 16rem;
+    height: 10rem;
     object-fit: cover;
+    padding-left: 2rem;
 }
 
 nav#menu_lateral {
     display: flex;
     flex-direction: column;
-    width: 35vh;
-    height: 80vh;
+    width: 12rem;
+    height: 85vh;
     background-color: #1F1273;
     color: white;
     font-family: 'Ubuntu';
@@ -47,11 +48,12 @@ nav#menu_lateral div {
     padding: 1rem;
 }
 
-nav#menu_lateral div h3 {
-    margin-left: 0.2rem;
-    font-size: 1.5rem;
+nav#menu_lateral div #nome_aluno {
+    margin-left: 0.5rem;
+    font-size: 1rem;
     justify-content: center;
     align-items: center;
+    text-align: inherit;
 }
 
 nav#menu_lateral ul {
@@ -59,7 +61,7 @@ nav#menu_lateral ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 1rem;
     border-radius: 5vh;
 }
@@ -69,7 +71,8 @@ nav#menu_lateral ul li {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin: 0.3rem;
 }
 
 nav#menu_lateral ul li a {
@@ -85,7 +88,7 @@ nav#menu_lateral ul li a:hover {
 }
 
 nav#menu_lateral ul li img {
-    width: 6vh;
-    height: 6vh;
+    width: 2rem;
+    height: 2rem;
     object-fit: cover;
 }
