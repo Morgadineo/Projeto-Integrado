@@ -32,7 +32,6 @@ ALTER USER administrador SET search_path TO disciplinas, '$user', public;
 
 SET search_path TO disciplinas, '$user', public;
 
-/*fodase.net*/
 
 CREATE TABLE alunos (
     matricula               VARCHAR(9)      NOT NULL,
