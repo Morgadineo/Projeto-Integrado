@@ -11,71 +11,85 @@
 </head>
 
 <body>
-
     <header id="Logo UVV">
-        <img src="/app/img/Logo_UVV.png" alt="LogoUVV" id="LogoUVV">
+        <img src="/img/logo_uvv.png" alt="LogoUVV" id="LogoUVV">
     </header>
-
-    <main>
-
-        <nav id="menu_lateral">
-            <img src="" alt="icone_aluno">
-            <h3 id="nome_aluno">Nome do aluno</h3>
-
-            <ul id="menus">
-                <li> <img src="img/icone_casa.png" alt="icone_casa" class="min_icon">
-                    <a href="#">Dashboard </a>
-                </li>
-                <li> <img src="img/icone_enviar.png" alt="icone_enviar" class="min_icon">
-                    <a href="#">Vizualizar Certificados</a>
-                </li>
-                <li> <img src="img/icone_pasta.png" alt="icone_pasta" class="min_icon">
-                    <a href="#">Histórico de Envios </a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <section id="informacoes">
-            <div id="inf1">
-                <div class="infclass">
-                    <h1>Gráficos</h1>
+    <main id="Mainline">
+        <nav id="BarraLateral">
+            <section id="Aluno">
+                <img class="ImgFotoAluno" src="/img/icone_aluno.png" alt="Foto_Aluno">
+                <p>Nome_do_Aluno</p>
+            </section>
+            <section id="NavegarPáginas">
+                <div class="IconeNavegarIcones">
+                    <img src="/img/icone_casa.png" alt="icone_casa">
+                    <p class="IconeNavegarPalavras">Dashboard</p>
                 </div>
-
-                <div class="infclass">
-                    <h1>Pendentes</h1>
-                    <h1>5</h1>
+                <div class="IconeNavegarIcones">
+                    <img src="/img/icone_enviar.png" alt="icone_enviar">
+                    <p class="IconeNavegarPalavras">Enviar Certificados</p>
                 </div>
-
-                <div class="infclass">
-                    <h1>Total de Certificados</h1>
-                    <h1>120</h1>
+                <div class="IconeNavegarIcones">
+                    <img src="/img/icone_pasta.png" alt="icone_pasta">
+                    <p class="IconeNavegarPalavras">Histórico de Envios</p>
                 </div>
+            </section>
+            <div class="IconeNavegarIcones" style="margin-top: 590px;">
+                <img src="/img/simbolo_de_aluno.png" alt="Simbolo de Aluno">
+                <p class="IconeNavegarPalavras">Você está logado como aluno. <span id="SairConta">Sair?</span></p>
             </div>
-            <h1 id="ultimosenv">Últimos certificados enviados pelos alunos</h1>
-            <table>
-                <thead>
+        </nav>
+        <section id="Conteudo">
+            <section id="BlocosInfo">
+                <div class="Bloco">
+                    <h2 id="EstadoCertificadosMaior">Pendentes:</h2>
+                </div>
+                <div class="Bloco">
+                    <h2 id="EstadoCertificados">Total de Certificados:</h2>
+                </div>
+            </section>
 
-                    <th>Nome da Atividade</th>
-                    <th>Tipo de Atividade</th>
-                    <th>Status</th>
-
-                </thead>
-                <tbody>
+            <div class="DivisoriaUltimoCertificados">
+                <h1 id="UltimosCertificados">Últimos certificados enviados pelos alunos:<span id="VerCertificados">Ver
+                        tudo</span>
+                </h1>
+            </div>
+            <div class="BlocoGeral">
+                <table id="TabelaAtividades">
                     <tr>
-                        <td>HTML e CSS básico</td>
-                        <td>Extensão</td>
-                        <td>Aprovado</td>
+                        <th>Nome da atividade</th>
+                        <th>Tipo de Atividade</th>
+                        <th>Status</th>
                     </tr>
                     <tr>
-                        <td>Python Básico</td>
+                        <td>Designer e Desenvolvimento de Banco de Dados.</td>
                         <td>Extensão</td>
                         <td>Pendente</td>
                     </tr>
-                </tbody>
-            </table>
+                    <tr>
+                        <td>Estatística Básica</td>
+                        <td>Extensão</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Programação Orientada a objetos</td>
+                        <td>Extensão</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Álgebra para Computação</td>
+                        <td>Extensão</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>Design de Games</td>
+                        <td>Extensão</td>
+                        <td>Aprovado</td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
-
-
 </body>
+
+</html>
