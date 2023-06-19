@@ -20,17 +20,17 @@
         <nav id="barra-lateral">
             <section id="navegar-paginas">
               <div class="menu-sites">
-                <a href="/Frontend/app/frontend/dashboard-alunos/index.html">
+                <a href="/Frontend/dashboard-alunos/index.html">
                   <img src="/Frontend/img/icone_casa.png" alt="home-uvv" id="home-uvv">
                   Dashboard
                 </a>
                 
-                <a href="/Frontend/app/frontend/enviar-certificados/index.html">
+                <a href="/Frontend/enviar-certificados/index.html">
                   <img src="/Frontend/img/icone_enviar.png" alt="enviar-uvv" id="enviar-uvv">
                   Enviar Certificado
                 </a>
           
-                <a href="/Frontend/app/frontend/visualizar-certificados/index-visualizar.html">
+                <a href="/Frontend/visualizar-certificados/index-visualizar.html">
                   <img src="/Frontend/img/icone_pasta.png" alt="historico-uvv" id="historico-uvv">
                   Histórico de envios
                 </a>
@@ -45,45 +45,46 @@
                 <div class="Bloco"> </div>
             </section>
         </section>
-        <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded w-50 p-3 " style="width: 500px; height: 700px;">
-            <div class=" mb-3">
-                <label for="exampleInputEmail1" class="form-label">Titulo da atividade</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded w-50 p-3 " style="width: 500px; height: auto;">
+            <div class=" mb-3" id="title">
+                <label for="inputTitle" class="form-label">Titulo da atividade</label>
+                <input type="text" class="form-control" id="titleForm" aria-describedby="emailHelp"
                     placeholder="Ex: Palestra X">
                 <div id="emailHelp" class="form-text"></div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Descrição da atividade</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
+            <div class="mb-3" id="desc">
+                <label for="inputDesc" class="form-label">Descrição da atividade</label>
+                <input type="text" class="form-control" id="descForm">
             </div>
-            <div class="col-12">
+            <div class="col-12" id="date">
                 <label for="inputAddress" class="form-label">Data da Atividade</label>
-                <input type="date" class="form-control" id="inputAddress">
+                <input type="date" class="form-control" id="dateForm">
             </div>
-            <div class="col-md-6 mt-3">
+            <div class="col-md-6 mt-3" id="time">
                 <label for="inputCity" class="form-label">Quatidade de horas</label>
-                <input type="number" class="form-control" id="inputCity">
+                <input type="number" class="form-control" id="timeForm">
             </div>
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4 mt-3" id="type">
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Tipo da atividade</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <label for="inputType" class="form-label">Tipo da atividade</label>
+                    <input type="text" class="form-control" id="typeForm">
                 </div>
             </div>
-            <div class="col-md-2 mt-3 mb-3">
+            <div class="col-md-2 mt-3 mb-3" id="validation">
                 <label for="inputZip" class="form-label">Código de Validação</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="validationForm">
             </div>
-            <div class="mb-3 w-50">
+            <div class="mb-3 w-50" id="file">
                 <label for="formFile" class="form-label">Anexar Certificado</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="form-control" type="file" id="fileForm">
               </div>
-            <button type="submit" class="btn btn-primary border border-0" style="background-color: #1F1273;">Enviar</button>
+            <button type="submit" class="btn btn-primary border border-0 p-2 w-50 h-20 mt-5 mw-100" style="background-color: #1F1273;">Enviar</button>
         </form>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
         </script>
+        <script src="FormInputs.js"></script>
 
 </body>
 
