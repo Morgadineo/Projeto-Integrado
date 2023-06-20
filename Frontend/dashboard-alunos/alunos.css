@@ -11,6 +11,7 @@ body {
 header#Cabecalho {
     background-color: #F1F1F1;
     width: 100%;
+    height: 20%;
 }
 
 header#LogoUVV {
@@ -21,7 +22,7 @@ header#LogoUVV {
 }
 
 main#Conteudo {
-    width: 100%;
+    height: 37.5rem;
 }
 
 nav#BarraLateral {
@@ -86,7 +87,7 @@ nav footer {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 100%;
+    margin-top: 21rem;
 }
 
 nav footer img {
