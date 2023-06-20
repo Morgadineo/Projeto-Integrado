@@ -3,15 +3,16 @@ const certificateTitle = document.getElementById("titleForm"),
       certificateDate = document.getElementById("dateForm"),
       certificateTime = document.getElementById("timeForm"),
       certificateType = document.getElementById("typeForm"),
-      certificateValidation = document.getElementById("validationForm")
-
+      certificateValidation = document.getElementById("validationForm"),
+      certificateSubmit = document.getElementById("validationSubmit")
+      
 certificateTitle.addEventListener('focusout', inputCheckTitle)
 certificateDesc.addEventListener('focusout', inputCheckDesc)
 certificateDate.addEventListener('focusout', inputCheckDate)
 certificateTime.addEventListener('focusout', inputCheckTime)
 certificateType.addEventListener('focusout', inputCheckType)
 certificateValidation.addEventListener('focusout', inputCheckValidation)
-
+certificateSubmit.addEventListener('click', submitCheck)
 
 function inputCheckTitle() 
 {
@@ -94,5 +95,14 @@ function inputCheckValidation()
     }
 }
 
+const formSubmit = document.forms["form"]["formInput"].value;
 
+function submitCheck() 
+{
+    if(formSubmit === "")
+    {
+        alert("Os campos precisam estar preenchidos.")
+        return false;
+    }
+}
 
