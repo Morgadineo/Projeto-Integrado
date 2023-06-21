@@ -21,7 +21,7 @@ header#LogoUVV {
     margin-bottom: 0.18rem;
 }
 
-main#Corpo {
+main#Mainline {
     display: flex;
     height: 100%;
 }
@@ -93,8 +93,6 @@ nav footer {
 
 nav footer img {
     object-fit: cover;
-    width: 3rem;
-    height: 3rem;
 }
 
 #SairConta {
@@ -102,3 +100,74 @@ nav footer img {
 }
 
 /*Fim do CSS do Menu lateral*/
+
+#Validar {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin-top: 26px;
+    margin-left: 33px;
+}
+
+#MenuSeleção {
+    margin-top: 26px;
+    margin-left: 95px;
+    margin-right: 42px;
+    width: 181px;
+    height: 20px;
+}
+
+#BotaoAnexar {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 141px;
+    width: 166px;
+    height: 48px;
+    color: #f2f2f2;
+    background-color: #311C94;
+    border-radius: 5%;
+    border: none;
+}
+
+#BotaoVerde {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 389px;
+    width: 86px;
+    height: 48px;
+    color: #f2f2f2;
+    background-color: #1C9421;
+    border-radius: 5%;
+    border: none;
+    border: 1px solid #311C94;
+}
+
+#BotaoVerde:hover {
+    background-color: #136616;
+}
+
+#BotaoVermelho {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 87px;
+    width: 86px;
+    height: 48px;
+    color: #f2f2f2;
+    background-color: #941C1C;
+    border-radius: 5%;
+    border: none;
+    border: 1px solid #311C94;
+}
+
+#BotaoVermelho:hover {
+    background-color: #5c1212;
+}
+
+.Botoes {
+    margin-top: 410px;
+}
+
+.BlocoGeral {
+    margin-top: 197px;
+    margin-left: 72px;
+    height: 602px;
+    width: 1042px;
+    border: 0.5px solid black;
+    border-radius: 1%;
+}

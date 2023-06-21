@@ -6,33 +6,30 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-request.onload = function() {
+request.onload = function () {
     const certificados = request.response;
     headerTable(certificados);
     showTable(certificados);
 }
 
-function headerTable(jsonObj) 
-{
+function headerTable(jsonObj) {
     const table = document.getElementById('tabelaCertificados');
     const tr = document.getElementById('tr');
 }
 
-function showTable(jsonObj) 
-{
+function showTable(jsonObj) {
     const table = document.getElementById('tabelaCertificados');
     const tbody = document.createElement('tbody');
 
-    jsonObj.forEach(function(certificado) 
-    {
+    jsonObj.forEach(function (certificado) {
         const tr = document.createElement('tr');
-        
+
         for (let prop in certificado) {
             const td = document.createElement('td');
             td.textContent = certificado[prop];
             tr.appendChild(td);
         }
-        
+
         tbody.appendChild(tr);
     });
 

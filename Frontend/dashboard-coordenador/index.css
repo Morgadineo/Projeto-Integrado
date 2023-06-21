@@ -1,102 +1,107 @@
+/*Começo do CSS do Menu lateral*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: #f2f2f2;
 }
 
-#TabelaAtividades {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    border-collapse: separate;
-    border-spacing: 0;
-    height: 292px;
-    width: 860px;
+header#Cabecalho {
+    background-color: #F1F1F1;
+    width: 100%;
+    height: 20%;
 }
 
-th {
-    padding: auto;
-    border-left: 3px solid black;
-    border-bottom: 1px solid black;
+header#LogoUVV {
+    width: 16rem;
+    height: 8.6rem;
+    margin-top: 0.18rem;
+    margin-bottom: 0.18rem;
 }
 
-td {
-    border-left: 3px solid black;
-    text-align: center;
-    /* Alinha o texto à esquerda nas células */
-}
-
-#LogoUVV {
-    width: 256px;
-    height: 138px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-
-#Mainline {
+main#Corpo {
     display: flex;
+    height: 100%;
 }
 
-#BarraLateral {
-    padding-top: 27px;
-    padding-bottom: 67px;
-    width: 233px;
-    height: 838px;
+nav#BarraLateral {
+    padding-top: 1.6rem;
     background-color: #1F1273;
+    padding-bottom: 4.1rem;
+    width: 20%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
 }
 
-#Conteudo {
-    flex-grow: 1;
-}
-
-#BlocosInfo {
-    margin-top: 130px;
-    margin-left: 118px;
+nav section#Aluno {
+    margin-left: 1.06rem;
+    margin-bottom: 4.25rem;
     display: flex;
-}
-
-#NavegarPáginas {
-    border-radius: 20px;
-    margin-left: 14px;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    height: 136px;
-    width: 199px;
-    background-color: #1B0C54;
-}
-
-
-#Aluno {
-    margin-left: 17px;
-    margin-bottom: 68px;
-    display: flex;
-    flex-direction: row;
     color: white;
     font-family: 'Ubuntu';
 }
 
-#IconeAlunoSair {
-    padding-top: 12px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
+nav section#Navegacao {
+    border-radius: 1.25rem;
+    margin-left: 0.8rem;
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: auto;
+    width: 85%;
+    background-color: #1B0C54;
 }
 
-#IconeAluno {
+nav section#Navegacao ul {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+nav section#Navegacao ul li {
     display: flex;
     align-items: center;
+    justify-content: left;
+    margin: 0.5rem;
+}
+
+nav section#Navegacao ul li a {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
+nav section#Navegacao ul li a:hover {
+    color: #614bee;
+    text-shadow: 1.5px 1.5px;
+}
+
+nav footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 21rem;
+}
+
+nav footer img {
+    object-fit: cover;
+    width: 3rem;
+    height: 3rem;
 }
 
 #SairConta {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #00F0FF;
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
 }
+
+/*Fim do CSS do Menu lateral*/
 
 #EstadoCertificadosMaior {
     margin-left: 104px;

@@ -2,21 +2,19 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="alunos.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Alunos</title>
-    <link rel="stylesheet" href="alunos.css">
+    <title>Validação Certificados</title>
+    <link rel="stylesheet" href="Frontend/dashboard-coordenador/index.css">
 </head>
 
 <body>
-    <!--Cabeçalho de Logo da UVV-->
     <header id="Cabecalho">
         <img src="/Frontend/img/logo_uvv.png" alt="LogoUVV" id="LogoUVV">
     </header>
-    <main id="Corpo">
-
+    <main id="Mainline">
         <!--Menu lateral-->
         <nav id="BarraLateral">
             <!--Foto e nome do aluno-->
@@ -40,7 +38,7 @@
 
                     <li>
                         <img src="/Frontend/img/icone_pasta.png" alt="icone_pasta">
-                        <a class="link_navegacao" href="/dashboard-alunos/alunos.html">Histórico de Envios</a>
+                        <a class="link_navegacao" href="/Frontend/img/">Histórico de Envios</a>
                     </li>
 
                 </ul>
@@ -52,23 +50,41 @@
             </footer>
         </nav>
         <!--Fim do menu lateral-->
-
         <section id="Conteudo">
-            <h1></h1>
+            <div class="BlocoGeral">
+                <h1 id="Validar">Validação de Certificados</h1>
+                <div>
+                    <select name="Course" id="MenuSeleção"> Curso
+                        <option value="DB">Banco de Dados</option>
+                        <option value="CD">Circuitos Digitais</option>
+                        <option value="EB">Estatística Básica</option>
+                        <option value="PT">Profissões na TI</option>
+                    </select>
+                    <select name="Course" id="MenuSeleção"> Curso
+                        <option value="MA">CC1MA</option>
+                        <option value="MB">CC1MB</option>
+                        <option value="MC">CC1MC</option>
+                        <option value="MD">CC1MD</option>
+                    </select>
+                    <select name="Course" id="MenuSeleção"> Curso
+                        <option value="2023">202301766</option>
+                        <option value="2023">202302102</option>
+                        <option value="2023">202304316</option>
+                        <option value="2023">202305767</option>
+                    </select>
+                </div>
 
-            <div>
-                <header>
-                    <input type="text" style="width: 844px; height: 27px;" placeholder="Pesquisar">
-                </header>
-                <div id="certificado" style="width: 844px; height: 79px;"></div>
-
+                <div class="Botoes">
+                    <button id="BotaoAnexar">Anexar Certificado</button>
+                    <button id="BotaoVerde">Validar</button>
+                    <button id="BotaoVermelho">Invalidar</button>
+                </div>
             </div>
-
         </section>
-
     </main>
 
-    <script src="script.js"></script>
+
 </body>
+
 
 </html>

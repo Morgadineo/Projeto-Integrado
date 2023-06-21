@@ -1,35 +1,34 @@
 [
-    {
-      "titulo": "Design e Desenvolvimento de Banco de dados",
-      "matricula": 202305642,
-      "dataDeEnvio": "01/09/2020",
-      "tipoDeAtividade": "Extensão",
-      "status": "Pendente",
-      "pontuacao": "20 pontos"
-    },
-    {
-      "titulo": "Circuitos Digitais",
-      "matricula": 202304782,
-      "dataDeEnvio": "28/10/2020",
-      "tipoDeAtividade": "Extensão",
-      "status": "Pendente",
-      "pontuacao": "15,9 pontos"
-    },
-    {
-      "titulo": "Estatística Básica",
-      "matricula": 202206257,
-      "dataDeEnvio": "03/04/2021",
-      "tipoDeAtividade": "Extensão",
-      "status": "Pendente",
-      "pontuacao": "17,8 pontos"
-    },
-    {
-      "titulo": "Profissões na TI",
-      "matricula": 202307123,
-      "dataDeEnvio": "10/04/2023",
-      "tipoDeAtividade": "Extensão",
-      "status": "Pendente",
-      "pontuacao": "17,8 pontos"
-    }
-    
-  ]
+  {
+    "titulo": "Design e Desenvolvimento de Banco de dados",
+    "matricula": 202305642,
+    "dataDeEnvio": "01/09/2020",
+    "tipoDeAtividade": "Extensão",
+    "status": "Pendente",
+    "pontuacao": "20 pontos"
+  },
+  {
+    "titulo": "Circuitos Digitais",
+    "matricula": 202304782,
+    "dataDeEnvio": "28/10/2020",
+    "tipoDeAtividade": "Extensão",
+    "status": "Pendente",
+    "pontuacao": "15,9 pontos"
+  },
+  {
+    "titulo": "Estatística Básica",
+    "matricula": 202206257,
+    "dataDeEnvio": "03/04/2021",
+    "tipoDeAtividade": "Extensão",
+    "status": "Pendente",
+    "pontuacao": "17,8 pontos"
+  },
+  {
+    "titulo": "Profissões na TI",
+    "matricula": 202307123,
+    "dataDeEnvio": "10/04/2023",
+    "tipoDeAtividade": "Extensão",
+    "status": "Pendente",
+    "pontuacao": "17,8 pontos"
+  }
+]
