@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -156,22 +160,10 @@ body {
     position: relative;
     margin-top: 65px;
     margin-left: 118px;
-    height: 287.27px;
+    /*height: 287.27px;*/
+    height: auto;
     width: 1489px;
     border: 2px solid black;
-}
-
-.BlocoGeral > .tabelaCertificados {
-    display: flex;
-    font-family: 'Ubuntu';
-    left: 150px;
-    align-items: center;
-    border: 1px solid black;
-    width: 93,4rem;
-    border-left: 1px solid black;
-    border-collapse: collapse;
-    margin: 20px;
-    margin-top: 10px;
 }
 
 .BlocoGeral > .tabelaCertificados tr th {
@@ -193,9 +185,7 @@ body {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 1450px;
-
-    
+    width: 1400px;
 }
 
 .BlocoGeral > .tabelaCertificados tr td {
@@ -203,9 +193,38 @@ table, th, td {
     border-collapse: collapse;
 }
 
-.tabelaLinhas{
-    margin: 10px;
+table {
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    margin-left: auto;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  thead {
+    top: 0;
+    background-color: #f2f2f2;
+  }
+
+  th {
+    background-color: #717171;
+    
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+
+
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
+  
 
 .Icones {
     padding-right: 27px;
