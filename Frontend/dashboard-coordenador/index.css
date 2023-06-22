@@ -103,6 +103,16 @@ nav footer img {
 
 /*Fim do CSS do Menu lateral*/
 
+#TabelaAtividades {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    align-items: center;
+    justify-content: center;
+    height: 292px;
+    width: 860px;
+    border: 1px solid black;
+}
+
 #EstadoCertificadosMaior {
     margin-left: 104px;
     font-size: 25px;
@@ -117,17 +127,18 @@ nav footer img {
 
 #UltimosCertificados {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 2px;
+    margin-left: 125px;
     margin-bottom: 5px;
 }
 
 #VerCertificados {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 501px;
+    margin-left: 201px;
     color: #240E90;
 }
 
 .DivisoriaUltimoCertificados {
+    display: contents;
     margin-left: 123px;
     margin-top: 78px;
 }
@@ -142,7 +153,7 @@ nav footer img {
 
 .BlocoGeral {
     margin-top: 65px;
-    margin-left: 208px;
+    margin-left: 105px;
     height: 292px;
     width: 860px;
     border: 2px solid black;
@@ -175,4 +186,12 @@ nav footer img {
     align-items: center;
     height: 40px;
     width: 25px;
+}
+
+#Mainline {
+    display: flex;
+}
+
+#BlocosInfo {
+    display: flex;
 }
