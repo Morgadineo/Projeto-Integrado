@@ -138,6 +138,13 @@ body {
     margin-left: 951px;
     color: #038181;
 }
+#VerCertificados > a{
+    text-decoration: none;
+    color: #038181;
+}
+#VerCertificados > a:hover{
+    color: #74c0c0;
+}
 
 .LegendasSuporte {
     display: flex;
