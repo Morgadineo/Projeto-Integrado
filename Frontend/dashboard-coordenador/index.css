@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
 body {
     margin: 0px;
     padding: 0px;
     background-color: #f2f2f2;
+    height: 100%;
 }
 
 header#Cabecalho {
@@ -21,30 +28,41 @@ header#LogoUVV {
     margin-bottom: 0.18rem;
 }
 
-main#Corpo {
+main#Mainline {
     display: flex;
-    height: 100%;
+    height: 49rem;
+    position: relative;
 }
 
 nav#BarraLateral {
-    padding-top: 1.6rem;
     background-color: #1F1273;
-    padding-bottom: 4.1rem;
-    width: 20%;
-    height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 17%;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav section#Aluno {
-    margin-left: 1.06rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-bottom: 4.25rem;
     display: flex;
     color: white;
     font-family: 'Ubuntu';
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+nav section#Aluno p {
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav section#Navegacao {
+    flex-wrap: wrap;
     border-radius: 1.25rem;
     margin-left: 0.8rem;
     margin-right: 1.25rem;
@@ -77,121 +95,135 @@ nav section#Navegacao ul li a {
     font-style: normal;
     color: white;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 nav section#Navegacao ul li a:hover {
     color: #614bee;
-    text-shadow: 1.5px 1.5px;
+    text-shadow: 1px 1px;
 }
 
 nav footer {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    margin-top: 21rem;
+    position: absolute;
+    bottom: 0;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
+
 
 nav footer img {
     object-fit: cover;
-    width: 3rem;
-    height: 3rem;
 }
 
-#SairConta {
+nav footer p {
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+}
+
+nav footer #SairConta {
     color: #00F0FF;
 }
 
-/*Fim do CSS do Menu lateral*/
+nav footer #SairConta:hover {
+    cursor: pointer;
+}
 
-#TabelaAtividades {
+/*Fim do CSS lateral*/
+
+section#Conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/*INICIO Section BlocosInfo*/
+section#Conteudo section#BlocosInfo {
+    display: flex;
+}
+
+section#BlocosInfo div.Bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6.5rem;
+    margin-right: 4rem;
+    height: 11rem;
+    width: 21rem;
+    border: 2px solid black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 7px 10px rgb(102, 102, 102);
+}
 
+section#BlocosInfo div.Bloco h1 {
+    font-size: 2rem;
+}
+
+section#BlocosInfo div.Bloco h2 {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+/*FIM Section BlocosInfo*/
+
+/*INICIO Div divisora de certificado*/
+section#Conteudo div#DivisoriaUltimoCertificados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 0;
+}
+
+div#DivisoriaUltimoCertificados h1#UltimosCertificados {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 7.8rem;
+}
+
+div#DivisoriaUltimoCertificados h1#UltimosCertificados span#VerCertificados {
+    color: #102bc7;
+    margin-left: 10rem;
+}
+
+/*FIM Div divisora de certificado*/
+
+/*INICIO div BlocoGeral*/
+section#Conteudo div#BlocoGeral {
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+    height: 18rem;
+    width: 53.75rem;
+}
+
+div#BlocoGeral table#TabelaAtividades {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(34, 30, 30);
     align-items: center;
     justify-content: center;
-    height: 292px;
-    width: 860px;
+    height: 18rem;
+    width: 53.75rem;
     border: 1px solid black;
+    box-shadow: 7px 10px rgb(102, 102, 102);
 }
 
-#EstadoCertificadosMaior {
-    margin-left: 104px;
-    font-size: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+div#BlocoGeral table#TabelaAtividades tr th {
+    background-color: #c0c0c0;
 }
 
-#EstadoCertificados {
-    margin-left: 47px;
-    font-size: 25px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+div#BlocoGeral table#TabelaAtividades th,
+td {
+    border-collapse: collapse;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 1rem;
+    background-color: #F1F1F1;
 }
 
-#UltimosCertificados {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 125px;
-    margin-bottom: 5px;
-}
+/*FIM div BlocoGeral*/
 
-#VerCertificados {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 201px;
-    color: #240E90;
-}
-
-.DivisoriaUltimoCertificados {
-    display: contents;
-    margin-left: 123px;
-    margin-top: 78px;
-}
-
-.Bloco {
-    margin-left: 105px;
-    margin-right: 63px;
-    height: 174.16px;
-    width: 337px;
-    border: 2px solid black;
-}
-
-.BlocoGeral {
-    margin-top: 65px;
-    margin-left: 105px;
-    height: 292px;
-    width: 860px;
-    border: 2px solid black;
-}
-
-.ImgFotoAluno {
-    margin-right: 13px;
-}
-
-.IconeNavegarIcones {
-    padding-top: 12px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.IconeNavegarPalavras {
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    font-size: 13px;
-}
-
-.IconeAluno {
-    padding-top: 583px;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 25px;
-}
-
-#Mainline {
-    display: flex;
-}
-
-#BlocosInfo {
-    display: flex;
-}
+/*Fim section Conteudo*/
