@@ -118,13 +118,20 @@ function inputCheckValidation()
 
 document.getElementById("formId").addEventListener('submit', function(event) {
     event.preventDefault(); 
-    submitCheck(); 
 });
 
 function submitCheck() {
     if (!certificateTitle.value || !certificateDesc.value || !certificateDate.value || !certificateTime.value || !certificateType.value || !certificateValidation.value) {
       alert("Os campos precisam estar preenchidos.");
     } else {
+        setTimeout("submitCheck()", 10000)
+        const pSubmit = document.createElement("p");
+        const textSubmit= document.createTextNode("Enviado com sucesso!")
+        pSubmit.appendChild(textSubmit);
+
+        const showText = document.getElementById("submit")
+        showText.appendChild(pSubmit).style = 'color: green; font-weight: 300;'
+
         window.location.href = "/Frontend/visualizar-certificados/index-visualizar.html";
     }
 }
