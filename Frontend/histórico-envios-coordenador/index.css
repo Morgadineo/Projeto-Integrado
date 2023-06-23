@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
 body {
     margin: 0px;
     padding: 0px;
     background-color: #f2f2f2;
+    height: 100%;
 }
 
 header#Cabecalho {
@@ -21,29 +28,41 @@ header#LogoUVV {
     margin-bottom: 0.18rem;
 }
 
-main#Corpo {
+main#Mainline {
     display: flex;
-    height: 100%;
+    height: 49rem;
+    position: relative;
 }
 
 nav#BarraLateral {
-    padding-top: 1.6rem;
     background-color: #1F1273;
-    padding-bottom: 4.1rem;
-    width: 20%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 17%;
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav section#Aluno {
-    margin-left: 1.06rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-bottom: 4.25rem;
     display: flex;
     color: white;
     font-family: 'Ubuntu';
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+nav section#Aluno p {
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav section#Navegacao {
+    flex-wrap: wrap;
     border-radius: 1.25rem;
     margin-left: 0.8rem;
     margin-right: 1.25rem;
@@ -73,34 +92,47 @@ nav section#Navegacao ul li {
 nav section#Navegacao ul li a {
     margin: 0;
     padding: 0;
-    color: white;
     font-style: normal;
+    color: white;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 nav section#Navegacao ul li a:hover {
     color: #614bee;
-    text-shadow: 1.5px 1.5px;
+    text-shadow: 1px 1px;
 }
 
 nav footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-top: 24rem;
+    position: absolute;
+    bottom: 0;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
+
 
 nav footer img {
     object-fit: cover;
 }
 
-#SairConta {
+nav footer p {
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+}
+
+nav footer #SairConta {
     color: #00F0FF;
 }
 
-/*Fim do CSS do Menu lateral*/
+nav footer #SairConta:hover {
+    cursor: pointer;
+}
 
+/*Fim do CSS lateral*/
 main#Corpo section#Conteudo {
     border: 1px solid black;
     width: 1070px;
@@ -147,6 +179,7 @@ section#Conteudo div .certificado {
     background-color: #F1F1F1;
     align-items: baseline;
 }
+
 #historico {
     position: relative;
 }
@@ -157,18 +190,19 @@ section#Conteudo div .certificado {
 }
 
 .certificado {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 10px;
-  font-size: small;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: small;
 
 }
+
 .certificado p {
     font-family: 'Ubuntu', sans-serif;
     position: absolute;
-    display: flex; 
+    display: flex;
     margin: 55px;
     color: #000;
     align-items: center;
@@ -177,19 +211,20 @@ section#Conteudo div .certificado {
     margin: 15px;
     padding: 10px;
 }
+
 .certificado {
     border: 1px solid black;
     padding: 10px;
     margin-bottom: 10px;
 }
-  
+
 .certificate-name {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .certificate-info {
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 
 hr {

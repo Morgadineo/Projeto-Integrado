@@ -12,90 +12,120 @@
 </head>
 
 <body>
-    <header id="Logo UVV">
-        <img src="https://cdn.discordapp.com/attachments/779807771348566019/1115749707038339082/Logo_UVV.png"
-            alt="LogoUVV" id="LogoUVV">
-    </header>
-    <main id="Mainline">
-        <nav id="barra-lateral">
-            <section id="navegar-paginas">
-                <div class="menu-sites">
-                    <a href="/Frontend/dashboard-alunos/alunos.html">
-                        <img src="/Frontend/img/icone_casa.png" alt="home-uvv" id="home-uvv">
-                        Dashboard
-                    </a>
+    <!DOCTYPE html>
+    <html lang="pt-br">
 
-                    <a href="/Frontend/enviar-certificados/index.html">
-                        <img src="/Frontend/img/icone_enviar.png" alt="enviar-uvv" id="enviar-uvv">
-                        Enviar Certificado
-                    </a>
+    <head>
+        <link rel="stylesheet" href="alunos.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard Alunos</title>
+    </head>
 
-                    <a href="/Frontend/visualizar-certificados/index-visualizar.html">
-                        <img src="/Frontend/img/icone_pasta.png" alt="historico-uvv" id="historico-uvv">
-                        Histórico de envios
-                    </a>
-                </div>
+    <body>
+        <!--Cabeçalho de Logo da UVV-->
+        <header id="Cabecalho">
+            <img src="/img/logo_uvv.png" alt="LogoUVV" id="LogoUVV">
+        </header>
+        <main id="Mainline">
+
+            <!--Menu lateral-->
+            <nav id="BarraLateral">
+                <!--Foto e nome do aluno-->
+                <section id="Aluno">
+                    <img class="ImgFotoAluno" src="/img/icone_aluno.png" alt="Foto_Aluno">
+                    <p>Nome_do_Aluno</p>
+                </section>
+
+                <!--Caixa de navegação-->
+                <section id="Navegacao">
+                    <ul>
+                        <li>
+                            <img src="/img/icone_casa.png" alt="icone_casa">
+                            <a class="link_navegacao" href="/dashboard-alunos/alunos.html">Dashboard</a>
+                        </li>
+
+                        <li>
+                            <img src="/img/icone_enviar.png" alt="icone_enviar">
+                            <a class="link_navegacao" href="/enviar-certificados/index.html">Validar Certificados</a>
+                        </li>
+
+                        <li>
+                            <img src="/img/icone_pasta.png" alt="icone_pasta">
+                            <a class="link_navegacao" href="/dashboard-alunos/alunos.html">Histórico de Envios</a>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <footer>
+                    <img src="/img/simbolo_de_aluno.png" alt="Icone aluno">
+                    <p>Você está logado como aluno. <span id="SairConta">Sair?</span></p>
+                </footer>
+            </nav>
+            <!--Fim do menu lateral-->
+            <section id="Conteudo">
+                <section id="BlocosInfo">
+                    <div class="Bloco"> </div>
+                    <div class="Bloco"> </div>
+                    <div class="Bloco"> </div>
+                    <div class="Bloco"> </div>
+                </section>
             </section>
-        </nav>
-        <section id="Conteudo">
-            <section id="BlocosInfo">
-                <div class="Bloco"> </div>
-                <div class="Bloco"> </div>
-                <div class="Bloco"> </div>
-                <div class="Bloco"> </div>
-            </section>
-        </section>
-        <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded w-50 p-3 " style="width: 500px; height: auto;"
-            id="formId" name="form" method="POST" action="FormInputs.js">
+            <form class="mx-auto p-2 shadow p-3 mb-5 bg-body-tertiary rounded w-50 p-3 "
+                style="width: 500px; height: auto;" id="formId" name="form" method="POST" action="FormInputs.js">
 
-            <div class=" mb-3" id="title">
-                <label for="inputTitle" class="form-label">Titulo da atividade*</label>
-                <input type="text" class="form-control" id="titleForm" aria-describedby="emailHelp"
-                    placeholder="Ex: Palestra X" name="formInput">
-                <div id="emailHelp" class="form-text"></div>
-            </div>
-
-            <div class="mb-3" id="desc">
-                <label for="inputDesc" class="form-label">Descrição da atividade*</label>
-                <input type="text" class="form-control" id="descForm" name="formInput">
-            </div>
-
-            <div class="col-12" id="date">
-                <label for="inputAddress" class="form-label">Data da Atividade*</label>
-                <input type="date" class="form-control" id="dateForm" name="formInput">
-            </div>
-
-            <div class="col-md-6 mt-3" id="time">
-                <label for="inputCity" class="form-label">Quatidade de horas*</label>
-                <input type="number" class="form-control" id="timeForm" name="formInput">
-            </div>
-
-            <div class="col-md-4 mt-3" id="type">
-                <div class="mb-3">
-                    <label for="inputType" class="form-label">Tipo da atividade*</label>
-                    <input type="text" class="form-control" id="typeForm" name="formInput">
+                <div class=" mb-3" id="title">
+                    <label for="inputTitle" class="form-label">Titulo da atividade*</label>
+                    <input type="text" class="form-control" id="titleForm" aria-describedby="emailHelp"
+                        placeholder="Ex: Palestra X" name="formInput">
+                    <div id="emailHelp" class="form-text"></div>
                 </div>
-            </div>
 
-            <div class="col-md-2 mt-3 mb-3" id="validation">
-                <label for="inputZip" class="form-label">Código de Validação*</label>
-                <input type="text" class="form-control" id="validationForm" name="formInput">
-            </div>
+                <div class="mb-3" id="desc">
+                    <label for="inputDesc" class="form-label">Descrição da atividade*</label>
+                    <input type="text" class="form-control" id="descForm" name="formInput">
+                </div>
 
-            <div class="mb-3 w-50" id="file">
-                <label for="formFile" class="form-label">Anexar Certificado*</label>
-                <input class="form-control" type="file" id="fileForm" name="formInput">
-            </div>
-            
-            <div id="submit">
-                <button type="submit" class="btn btn-primary border border-0 p-2 w-50 h-20 mt-5 mw-100"
-                    style="background-color: #1F1273;" id="validationSubmit">Enviar</button>
-            </div>
-        </form>
+                <div class="col-12" id="date">
+                    <label for="inputAddress" class="form-label">Data da Atividade*</label>
+                    <input type="date" class="form-control" id="dateForm" name="formInput">
+                </div>
 
-        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-            </script>
-        <script src="FormInputs.js"></script>
-</body>
-</html>
+                <div class="col-md-6 mt-3" id="time">
+                    <label for="inputCity" class="form-label">Quatidade de horas*</label>
+                    <input type="number" class="form-control" id="timeForm" name="formInput">
+                </div>
+
+                <div class="col-md-4 mt-3" id="type">
+                    <div class="mb-3">
+                        <label for="inputType" class="form-label">Tipo da atividade*</label>
+                        <input type="text" class="form-control" id="typeForm" name="formInput">
+                    </div>
+                </div>
+
+                <div class="col-md-2 mt-3 mb-3" id="validation">
+                    <label for="inputZip" class="form-label">Código de Validação*</label>
+                    <input type="text" class="form-control" id="validationForm" name="formInput">
+                </div>
+
+                <div class="mb-3 w-50" id="file">
+                    <label for="formFile" class="form-label">Anexar Certificado*</label>
+                    <input class="form-control" type="file" id="fileForm" name="formInput">
+                </div>
+
+                <div id="submit">
+                    <button type="submit" class="btn btn-primary border border-0 p-2 w-50 h-20 mt-5 mw-100"
+                        style="background-color: #1F1273;" id="validationSubmit">Enviar</button>
+                </div>
+            </form>
+
+            <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous">
+                </script>
+            <script src="FormInputs.js"></script>
+    </body>
+
+    </html>
