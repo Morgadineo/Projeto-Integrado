@@ -105,6 +105,7 @@ main#Corpo section#Conteudo {
     border: 1px solid black;
     width: 1070px;
     height: 798px;
+    height: auto;
     margin-left: 67px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #b4b4b4;
@@ -139,6 +140,7 @@ section#Conteudo div header button {
 section#Conteudo div .certificado {
     width: 74%;
     height: 5rem;
+    height: auto;
     border: 1px solid black;
     margin-top: 40px;
     border-radius: 5px;
@@ -166,16 +168,13 @@ section#Conteudo div .certificado {
 .certificado p {
     font-family: 'Ubuntu', sans-serif;
     position: absolute;
-    display: inline; 
     display: flex; 
     margin: 55px;
     color: #000;
     align-items: center;
-    justify-content: center;
-    left: 100px;
-}
-.certificado p :nth-child(2){
-    margin: 10px;
+    justify-content: space-between;
+    left: 60px;
+    margin: 15px;
     padding: 10px;
 }
 .certificado {
@@ -188,10 +187,12 @@ section#Conteudo div .certificado {
     font-weight: bold;
     margin-bottom: 10px;
 }
-  
-.certificado p {
-    margin: 5px 0;
-}
+
 .certificate-info {
     padding-bottom: 5px; 
+}
+
+hr {
+    text-decoration: none;
+    border: #f2f2f2;
 }
